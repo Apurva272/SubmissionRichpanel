@@ -45,9 +45,9 @@ const Chats=()=>{
         })
         .catch(()=>{
             let formdata = new FormData();
-            formdata.append('email',"amit@richpanel.com");
-            formdata.append('username', user.email);
-            formdata.append('secret', user.uid);
+            formdata.append('email',"apurva27299@gmail.com");
+            formdata.append('username', "Apurva");
+            formdata.append('secret', "Iwilldoit#1");
 
             getFile(user.photoURL)
                 .then((avatar)=>{
@@ -80,7 +80,7 @@ const Chats=()=>{
             </div>
             <ChatEngine height="calc(100vh-66px)"
                         projectID="72703395-16fa-400f-a736-28cba4450489"
-                        userName = "Apurva"
+                        userName = "apurva27299@gmail.com"
                         userSecret= "Iwilldoit#1"
             />
            

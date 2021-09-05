@@ -36,8 +36,8 @@ const Chats=()=>{
         axios.get('https://api.chantengine.io/users/me',{
             headers:{
                 "projectID": "72703395-16fa-400f-a736-28cba4450489",
-                "user-name": "Apurva",
-                "user-secret": "Iwilldoit#1"
+                "user-name": {user.email},
+                "user-secret": {user.uid}
 
             }
         }).then(()=>{
@@ -45,9 +45,9 @@ const Chats=()=>{
         })
         .catch(()=>{
             let formdata = new FormData();
-            formdata.append('email',"apurva27299@gmail.com");
-            formdata.append('username', "Apurva");
-            formdata.append('secret', "Iwilldoit#1");
+            formdata.append('email',"amit@richpanel.com");
+            formdata.append('username', {user.email});
+            formdata.append('secret', {user.uid);
 
             getFile(user.photoURL)
                 .then((avatar)=>{
@@ -80,8 +80,8 @@ const Chats=()=>{
             </div>
             <ChatEngine height="calc(100vh-66px)"
                         projectID="72703395-16fa-400f-a736-28cba4450489"
-                        userName = "apurva27299@gmail.com"
-                        userSecret= "Iwilldoit#1"
+                        userName = {user.email}
+                        userSecret= {user.uid}
             />
            
         </div>
